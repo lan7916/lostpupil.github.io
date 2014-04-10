@@ -877,10 +877,10 @@ a.hs-totop-link{
 }
 .profile {
 	margin: 0 auto;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
-	background: #47a3da;
+	background: #eaf4fc;
 }
 
 .profile img {
