@@ -1,0 +1,26 @@
+
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+
+pygments: true
+
+title: crazyphage
+description: Stylish Jekyll Theme
+author:
+  name: crazyphage
+  email: ufozhengli@163.com
+  github: lostpupil
+  twitter: crazyphage
+
+
+  bio: Allons-y
+
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH: http://lostpupil.github.io/crazyphage
+
+
