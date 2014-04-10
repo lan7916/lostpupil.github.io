@@ -2,7 +2,7 @@
 layout: post
 title:  "what the fuck"
 date:   2014-04-10 14:58:47
-categories: blog
+category: blog
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
