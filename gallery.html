@@ -5,7 +5,7 @@ title: Crazy Phage
 <div>
   <h1>Gallery</h1>
   <ul >
-    {% for post in categories.gallery%}
+    {% for post in site.categories.gallery%}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
