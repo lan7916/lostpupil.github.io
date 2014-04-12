@@ -8,7 +8,7 @@ description: "莫名其妙的就可以在本地运行jekyll，然后就不需要
 ##在本地运行jekyll
 看到控制台输出的错误信息，大概就是编码问题。    
 
-    chcp 65001    
+	chcp 65001    
 就解决了。然后试着运行： 
    
 	jekyll serve    
