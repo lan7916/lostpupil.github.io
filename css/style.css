@@ -17,6 +17,13 @@
 	list-style-type: none;
 	padding: 30px 0 50px 0;
 	font-family: 'Gorditas', Arial, sans-serif;
+		background: 
+linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -50px 0,
+linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+linear-gradient(45deg, #ECEDDC 25%, transparent 25%);	
+background-size: 100px 100px;
+background-color: #EC173A;
 }
 
 .timeline:before {
