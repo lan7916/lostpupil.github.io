@@ -27,7 +27,7 @@ background-color: #EC173A;
 }
 
 .timeline:before {
-	content: '*';
+	content: '';
 	position: absolute;
 	width: 5px;
 	height: 100%;
