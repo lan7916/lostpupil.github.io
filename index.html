@@ -1,75 +1,24 @@
 ---
-layout: page
-title: dbyll
-tagline:
+layout: default
+title: Crazy Phage
 ---
 
-{% for post in paginator.posts %}
+<div>
+                <div class="intro-content">
+                    <div class="profile"><img src="images/author.jpg"></div>   
+                </div>
+                        <div class="page page-right">
+                            <div class="page-inner">
+                                <article>
+                                    <p><b> Alfred Tennyson: Ulysses</b></p>
+                                    <p> we are not now that strength which in old days</p>
+                                    <p>moved earth and heaven, that which we are, we are</p>
+                                    <p>one equal temper of heroic hearts</p>
+                                    <p>made weak by time and fate, but strong in will </p>
+                                    <p>to strive, to seek, to find, and not to yield.</p>
 
-        <article class="home">
+                                </article>
+                            </div><!-- /page-inner -->
+                        </div><!-- /page-right -->
 
-            <span class="post-date">
-                {% assign d = post.date | date: "%d" | plus:'0' %}
-                {{ post.date | date: "%B" }}
-                {% case d %}
-                  {% when 1 or 21 or 31 %}{{ d }}st,
-                  {% when 2 or 22 %}{{ d }}nd,
-                  {% when 3 or 23 %}{{ d }}rd,
-                  {% else %}{{ d }}th,
-                {% endcase %}
-                {{ post.date | date: "%Y" }}
-            </span>
-
-            <h2>
-                <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-            </h2>
-
-            <div>
-                {% if post.fullview %}
-                  {{ post.content }}
-                {% else %}
-                    {% if post.shortinfo %}
-                        {{ post.shortinfo }}
-                    {% elsif post.description %}
-                        {{ post.description }}
-                    {% else %}
-                        {{ post.excerpt }}
-                    {% endif %}
-                {% endif %}
-            </div>
-
-        </article>
-{% endfor %}
-<hr/>
-
-<ul class="pager"> 
-
-  {% if paginator.previous_page %}
-    <li class="previous">
-      {% if paginator.previous_page == 1 %}
-        <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
-      {% else %}
-        <a href="{{ site.BASE_PATH }}/page{{ paginator.previous_page }}">&larr; Newer</a>
-      {% endif %}
-    </li>
-  {% else %}
-    <li class="previous disabled">
-      <a>&larr; Newer</a>
-    </li>
-  {% endif %}
-  
-  <li>
-          <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
-
-  {% if paginator.next_page %}
-    <li class="next">
-            <a href="{{ site.BASE_PATH }}/page{{ paginator.next_page }}">Older &rarr;</a>
-    </li>
-  {% else %}
-    <li class="next disabled">
-            <a>Older &rarr;</a>        
-    </li>
-  {% endif %}
-
-</ul>
+</div>
