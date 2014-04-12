@@ -2,11 +2,26 @@
 layout: default
 title: Crazy Phage
 ---
-<div>
-  <h1>Archive</h1>
-  <ul >
-    {% for post in site.categories.blog %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="container">
+	<section class="main">
+		<ul id="timeline">
+			{% for post in site.categories.blog %}			
+			<li class="event">
+				<input type="radio" name="tl-group" checked/>
+				<label></label>
+				<div class="thumb user-1"><span>{{ post.date | date_to_string }}</span></div>
+				<div class="content-perspective">
+					<div class="content">
+						<div class="content-inner">
+							<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+							<p>{{ post.description }}</p>
+						</div>
+					</div>
+				</div>
+				
+			</li>
+			{% endfor %}
+
+		</ul>
+	</section>
 </div>
