@@ -907,7 +907,7 @@ a.hs-totop-link{
 
 .page-right {
 	left: 50%;
-	outline: 5px solid #ecf0f1; /* avoid rounding gaps */
+	/*outline: 5px solid #ecf0f1; /* avoid rounding gaps */*/
 	
 	color: #97a8b2;
 }
