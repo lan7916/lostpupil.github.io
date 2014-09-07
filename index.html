@@ -2,86 +2,90 @@
 layout: default
 title: Crazy Phage
 ---
-            <div id="bl-main" class="bl-main">
+<div id="bl-main" class="bl-main">
 
-                <section>
-                    <div class="bl-box">
-                        <h2 class="bl-icon bl-icon-about">About Me</h2>
-                    </div>
-                    <div class="bl-content">
-                        <h2>关于我</h2>
-                        <p>
-                            This responsive layout is based on an initial grid of four boxes. Once a box is clicked, it gets resized to fullscreen and the other boxes scale down and fade out. In the work section we experiment with another transition which is to show a panel by making it appear from the bottom while scaling the current one down. To see it in action, open the work section and click on one of the portfolio items and navigate through them.
-                        </p>
+    <section>
+        <div class="bl-box">
+            <h2 class="bl-icon bl-icon-about">About Me</h2>
+        </div>
+        <div class="bl-content">
+            <h2>关于我</h2>
+            <p>
+                
+            </p>
 
-                    </div>
-                    <span class="bl-icon bl-icon-close"></span>
-                </section>
+        </div>
+        <span class="bl-icon bl-icon-close"></span>
+    </section>
 
-                <section id="bl-work-section">
-                    <div class="bl-box">
-                        <h2 class="bl-icon bl-icon-works">Works</h2>
-                    </div>
-                    <div class="bl-content">
-                        <h2>我的东西</h2>
-                        <p>一些照片，一些图片</p>
-                        <ul id="bl-work-items">
-                            {% for work in site.categories.gallery %} 
-                                <li data-panel="panel-{{ work.description}}"><a href="#"><img src="images/{{work.description}}.jpg" /></a></li>
-                            {% endfor %}    
-                        </ul>
-                        <p>Illustrations by <a href="http://banana.eurus.cn">Pink Banana</a></p>
-                    </div>
-                    <span class="bl-icon bl-icon-close"></span>
-                </section>
+    <section id="bl-work-section">
+        <div class="bl-box">
+            <h2 class="bl-icon bl-icon-works">Works</h2>
+        </div>
+        <div class="bl-content">
+            <h2>我的东西</h2>
+            <p>一些照片，一些图片</p>
+            <ul id="bl-work-items">
+                {% for work in site.categories.gallery %} 
+                    <li data-panel="panel-{{ work.description}}"><a href="#"><img src="images/{{work.description}}.jpg" /></a></li>
+                {% endfor %}    
+            </ul>
+            <p>Illustrations by <a href="http://banana.eurus.cn">Pink Banana</a></p>
+        </div>
+        <span class="bl-icon bl-icon-close"></span>
+    </section>
 
-                <section>
-                    <div class="bl-box">
-                        <h2 class="bl-icon bl-icon-blog">Blog</h2>
-                    </div>
-                    <div class="bl-content">
-                        <h2>我的文章</h2>
-                        {% for post in site.categories.blog %}         
-                            <articel>
-                                <h3>{{ post.title }}</h3>
-                                <p>
-                                    <!-- {{ post.excerpt }} -->
-                                    {{ post.description }}
-                                    <a href="{{ post.url }}">Read more</a>
-                                </p>
-                                <p></p>
-                            </articel> 
-                        {% endfor %}    
-                    </div>
-                    <span class="bl-icon bl-icon-close"></span>
-                </section>
+    <section>
+        <div class="bl-box">
+            <h2 class="bl-icon bl-icon-blog">Blog</h2>
+        </div>
+        <div class="bl-content">
+            <h2>我的文章</h2>
+            {% for post in site.categories.blog %}         
+                <articel>
+                    <h3>{{ post.title }}</h3>
+                    <p>
+                        <!-- {{ post.excerpt }} -->
+                        {{ post.description }}
+                        <a href="{{ post.url }}">Read more</a>
+                    </p>
+                    <p></p>
+                </articel> 
+            {% endfor %}    
+        </div>
+        <span class="bl-icon bl-icon-close"></span>
+    </section>
 
-                <section>
-                    <div class="bl-box">
-                        <h2 class="bl-icon bl-icon-contact">Contact</h2>
-                    </div>
-                    <div class="bl-content">
-                        <h2>与我联系</h2>
-                        <p>Pinterest semiotics single-origin coffee craft beer thundercats irony, tumblr bushwick intelligentsia pickled. Narwhal mustache godard master cleanse street art, occupy ugh selfies put a bird on it cray salvia four loko gluten-free shoreditch. Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
-                    </div>
-                    <span class="bl-icon bl-icon-close"></span>
-                </section>
+    <section>
+        <div class="bl-box">
+            <h2 class="bl-icon bl-icon-contact">Contact</h2>
+        </div>
+        <div class="bl-content">
+            <h2>与我联系</h2>
+            <p><i class="fa fa-envelope"></i> ufozhengli@163.com</p>
+            <p><i class="fa fa-weixin"></i> crazyphage</p>
+            <p><i class="fa fa-qq"></i> 427733928</p>
+            <p><i class="fa fa-renren"></i> <a href="http://www.renren.com/331738600/profile"><i class="fa fa-arrow-right"></i></a></p>
+            <p><i class="fa fa-weibo"></i> <a href="http://weibo.com/attheworldend"><i class="fa fa-arrow-right"></i></a></p>
+        </div>
+        <span class="bl-icon bl-icon-close"></span>
+    </section>
 
-                <!-- Panel items for the works -->
-                <div class="bl-panel-items" id="bl-panel-work-items">
-                     {% for work in site.categories.gallery %} 
-                        <div data-panel="panel-{{ work.description}}">
-                            <div>
-                                <img src="images/{{ work.description}}.jpg" />
-                                <h3>{{work.title}}</h3>
-                                {{work.content}}
-                            </div>
-                        </div>
-                     {% endfor %}
-                    <nav>
-                        <span class="bl-next-work">&gt; Next Project</span>
-                        <span class="bl-icon bl-icon-close"></span>
-                    </nav>
-
+    <!-- Panel items for the works -->
+    <div class="bl-panel-items" id="bl-panel-work-items">
+         {% for work in site.categories.gallery %} 
+            <div data-panel="panel-{{ work.description}}">
+                <div>
+                    <img src="images/{{ work.description}}.jpg" />
+                    <h3>{{work.title}}</h3>
+                    {{work.content}}
                 </div>
             </div>
+         {% endfor %}
+        <nav>
+            <span class="bl-next-work">&gt; Next Project</span>
+            <span class="bl-icon bl-icon-close"></span>
+        </nav>
+
+    </div>
+</div>
