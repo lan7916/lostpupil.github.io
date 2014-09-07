@@ -1,0 +1,45 @@
+body{
+	background: #00a497;
+	color: #fff;
+}
+
+.content {
+	font-family: 'Microsoft YaHei', 'Lato', SimSun,'STHeiti Light','Droid Sans', Arial, sans-serif;
+	margin: 60 auto;
+	padding: 1.5em 1.5em;
+	max-width: 800px;
+	margin-bottom: 1.5em;
+	line-height: 1.6em;
+	background: #fcc800;
+	padding-bottom: 2em;
+}
+.header {
+	margin: auto;
+	 text-align: center;
+	 padding: 1.5em 1.5em 1.5em;
+
+ }
+ .time{
+	text-align: center;
+	padding: 1em 1em 1em;
+	font-weight: 250;
+	font-size: 1.2em;
+	background: #5654a2;
+}
+.content h1{
+	font-weight: 300;
+	font-size: 2.5em;
+	background: #ea5506;
+}
+.content h2{
+	font-weight: 250;
+	font-size: 2.2em;
+}
+.content h3{
+	font-weight: 200;
+	font-size: 1.9em;
+}
+.content p{
+	font-weight: 150;
+	font-size: 1.5em;
+}
