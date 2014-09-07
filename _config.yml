@@ -7,3 +7,4 @@ pygments: true
 
 rss_path: feed.xml
 BASE_PATH: http://lostpupil.github.io
+img_url: /images
