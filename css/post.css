@@ -9,7 +9,7 @@ body{
 	padding: 1.5em 1.5em;
 	max-width: 800px;
 	margin-bottom: 1.5em;
-	line-height: 1.6em;
+	line-height: 1.8em;
 	background: #fcc800;
 	padding-bottom: 2em;
 }
@@ -28,13 +28,13 @@ body{
 }
 .content h1{
 	font-weight: 300;
-	font-size: 2.5em;
+	/*font-size: 2.5em;*/
 	background: #ea5506;
 }
 .content h2{
 	text-align: center;
 	font-weight: 150;
-	font-size: 1.5em;
+	/*font-size: 1.5em;*/
 }
 .content h3{
 	text-align: center;
@@ -52,4 +52,10 @@ body{
 .footer a{
 	font-size: 1.5em;
 	color:#5654a2;
+}
+@media screen and (max-width: 350px) {
+	.content h1 h2 {
+		font-size: 2.25em;
+		font-size: 10vw;
+	}
 }
