@@ -45,3 +45,11 @@ body{
 	font-weight: 150;
 	font-size: 1.2em;
 }
+
+.footer {
+	text-align: center;
+}
+.footer a{
+	font-size: 1.5em;
+	color:#5654a2;
+}
