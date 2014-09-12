@@ -31,7 +31,7 @@ title: Crazy Phage
         </div>
         <div class="bl-content">
             <h2>我的东西</h2>
-            <p>一些照片，一些图片</p>
+            <p>一些照片，一些图片,一些东西</p>
             <ul id="bl-work-items">
                 {% for work in site.categories.gallery %} 
                     <li data-panel="panel-{{ work.description}}"><a href="#"><img src="images/{{work.description}}.jpg" /></a></li>
@@ -50,7 +50,7 @@ title: Crazy Phage
             <h2>我的文章</h2>
             {% for post in site.categories.blog %}         
                 <articel>
-                    <h3>{{ post.title }}</h3>
+                    <h3>{{ post.title }} <span>{{ post.date | date_to_string }}</span></h3>
                     <p>
                         <!-- {{ post.excerpt }} -->
                         {{ post.description }}
@@ -69,12 +69,18 @@ title: Crazy Phage
         </div>
         <div class="bl-content">
             <h2>与我联系</h2>
-            <p><i class="fa fa-envelope"></i> ufozhengli@163.com</p>
-            <p><i class="fa fa-weixin"></i> crazyphage</p>
-            <p><i class="fa fa-qq"></i> 427733928</p>
-            <p><i class="fa fa-renren"></i> <a href="http://www.renren.com/331738600/profile"><i class="fa fa-arrow-right"></i></a></p>
-            <p><i class="fa fa-weibo"></i> <a href="http://weibo.com/attheworldend"><i class="fa fa-arrow-right"></i></a></p>
-            <p> 知乎 <a href="http://www.zhihu.com/people/crazyphage"><i class="fa fa-arrow-right"></i></a></p>   
+            <div class="links">
+                <p> <a href="http://lostpupil.github.io/feed.xml"><i class="fa fa-rss"></i></a></p>
+                <p> <a href="mailto:ufozhengli@163.com"><i class="fa fa-envelope"></i></a></p>
+                <p><a href="https://github.com/lostpupil"><i class="fa fa-github-alt"></i></a></p>
+                <p><a href="https://www.facebook.com/crazyphage"><i class="fa fa-facebook-square"></i></a></p>
+                <p><a href="https://twitter.com/crazyphage"><i class="fa fa-twitter"></i></a></p>
+                <!--            <p><i class="fa fa-weixin"></i> crazyphage</p>
+                <p><i class="fa fa-qq"></i> 427733928</p> -->
+                <p> <a href="http://www.renren.com/331738600/profile"><i class="fa fa-renren"></i></a></p>
+                <p><a href="http://weibo.com/attheworldend"><i class="fa fa-weibo"></i> </a></p>
+                <p><a href="http://www.zhihu.com/people/crazyphage">知乎</a></p>   
+            </div>
         </div>
         <span class="bl-icon bl-icon-close"></span>
     </section>

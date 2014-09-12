@@ -447,3 +447,7 @@ section.bl-expand .bl-icon-close {
 		width: 40%;
 	}
 }
+.links{
+	font-size: 20px;
+	text-align: center;
+}
