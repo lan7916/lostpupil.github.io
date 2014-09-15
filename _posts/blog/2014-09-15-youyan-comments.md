@@ -14,5 +14,4 @@ comments :
   provider : uyan	
 </pre>    
 其它无任何配置需求，用起来还是非常简单的。然后直接push代码就可以很方便的部署了。
-
  
