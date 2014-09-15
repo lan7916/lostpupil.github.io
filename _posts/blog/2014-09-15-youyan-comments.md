@@ -1,6 +1,6 @@
 ---
 layout: post   
-title: "新版博客主题的选择"    
+title: "Jekyll中添加评论功能"    
 date: 2014-09-15 20:15:00   
 category: blog        
 description: "关于如何在网站中添加评论功能。"
