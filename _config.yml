@@ -1,7 +1,7 @@
 title: Crazy Phage Blog
 description: A mind palace for myself
 name: Crazy Phage
-markdown: redcarpet
+markdown: kramdown
 pygments: false
 highlighter: rouge
 
