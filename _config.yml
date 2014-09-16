@@ -3,7 +3,7 @@ description: A mind palace for myself
 name: Crazy Phage
 markdown: redcarpet
 encoding: "utf-8"
-pygments: false
+pygments: true
 # highlighter: pygments
 highlighter: rouge
 extensions: [fenced_code_blocks]
