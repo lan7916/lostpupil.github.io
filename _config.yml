@@ -4,8 +4,8 @@ name: Crazy Phage
 markdown: redcarpet
 encoding: "utf-8"
 pygments: false
-highlighter: pygments
-highlighter: rouge
+# highlighter: pygments
+# highlighter: rouge
 
 rss_path: feed.xml
 BASE_PATH: http://lostpupil.github.io
