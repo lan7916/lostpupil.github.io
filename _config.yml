@@ -3,7 +3,8 @@ description: A mind palace for myself
 
 name: Crazy Phage
 markdown: redcarpet
-pygments: true
+pygments: false
+highlighter: rouge
 
 rss_path: feed.xml
 BASE_PATH: http://lostpupil.github.io
