@@ -6,7 +6,7 @@ category: blog
 description: "如何使用highlight js来进行代码高亮"
 ---
 ##使用方法
-在post的layout中添加以下代码
+在post的layout中添加以下代码    
 
 ``` html
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css">
@@ -14,7 +14,7 @@ description: "如何使用highlight js来进行代码高亮"
 <script>hljs.initHighlightingOnLoad();</script>
 ```
 
-在_config.yml中添加以下代码
+在_config.yml中添加以下代码    
 
 ``` yaml
 pygments: false
