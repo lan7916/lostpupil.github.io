@@ -71,13 +71,13 @@ a:hover {
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #fcc800;
+	background: #00a497;
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #00a497;
+  background: #fef263;
 }
 
 .bl-box {
@@ -169,7 +169,7 @@ a:hover {
 	content: "\e005";
 }
 
-.bl-content, 
+.bl-content,
 div.bl-panel-items > div > div {
 	opacity: 0;
 	pointer-events: none;
@@ -219,7 +219,7 @@ div.bl-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-} 
+}
 
 .bl-content > ul li {
 	display: inline-block;
@@ -376,10 +376,11 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #ea5506;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #fcc800;
+	background: #00a497;
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #00a497;
+
+  background: #fef263;
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),

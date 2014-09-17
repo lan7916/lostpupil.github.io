@@ -1,5 +1,5 @@
 body{
-	background: #00a497;
+  background: #fef263;
 	color: #fff;
 }
 
@@ -10,7 +10,7 @@ body{
 	max-width: 800px;
 	margin-bottom: 1.5em;
 	line-height: 1.8em;
-	background: #fcc800;
+	background: #00a497;
 	padding-bottom: 2em;
 }
 .header {
