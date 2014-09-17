@@ -59,13 +59,13 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #5654a2;
+	background: #ea5506;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #ea5506;
+  background: #5654a2;
 }
 
 .bl-main > section:nth-child(3) {
@@ -77,7 +77,7 @@ a:hover {
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-  background: #fef263;
+  background: #ffd900;
 }
 
 .bl-box {
@@ -370,17 +370,17 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > section:first-child.bl-expand {
-	background: #5654a2;
+  background: #ea5506;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #ea5506;
+	background: #5654a2;
 }
 .bl-main > section:nth-child(3).bl-expand {
 	background: #00a497;
 }
 .bl-main > section:nth-child(4).bl-expand {
 
-  background: #fef263;
+  background: #ffd900;
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),
