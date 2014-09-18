@@ -59,3 +59,16 @@ body{
 		font-size: 10vw;
 	}
 }
+
+.pagination {
+	color: #fff;
+	text-align: center;
+}
+
+.pagination-item:first-child {
+	float: left;
+}
+
+.pagination-item:last-child {
+	float: right;
+}

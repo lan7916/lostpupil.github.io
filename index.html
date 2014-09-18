@@ -11,16 +11,17 @@ title: Crazy Phage
         <div class="bl-content">
             <h2>关于我</h2>
             <h3>简历</h3>
-            <p>2010-2014 <i class="fa fa-university"></i> 厦门大学嘉庚学院 
+            <p>2010-2014 <i class="fa fa-university"></i> 厦门大学嘉庚学院
                          <i class="fa fa-graduation-cap"></i> 计算机科学与技术</p>
-            <p>2014-~ <i class="fa fa-briefcase"></i> 风豪网络 
+            <p>2014-~ <i class="fa fa-briefcase"></i> 风豪网络
                       <i class="fa fa-laptop"></i> Rails开发工程师</p>
             <h3>技能</h3>
             <p>小众语言爱好者：使用过Lisp Clojure Ruby NodeJs BackboneJs etc.</p>
             <h3>兴趣爱好</h3>
             <p>轮滑 电影 音乐</p>
             <h3>理想</h3>
-            <p>为了维护世界的和平学习屠龙之技</p>
+            <p>维护世界的和平</p>
+            {% include copy.html %}
         </div>
         <span class="bl-icon bl-icon-close"></span>
     </section>
@@ -33,9 +34,9 @@ title: Crazy Phage
             <h2>我的东西</h2>
             <p>一些照片，一些图片,一些东西</p>
             <ul id="bl-work-items">
-                {% for work in site.categories.gallery %} 
+                {% for work in site.categories.gallery %}
                     <li data-panel="panel-{{ work.description}}"><a href="#"><img src="images/{{work.description}}.jpg" /></a></li>
-                {% endfor %}    
+                {% endfor %}
             </ul>
             <p>Cook by <a href="http://banana.eurus.cn">Pink Banana</a></p>
         </div>
@@ -48,7 +49,7 @@ title: Crazy Phage
         </div>
         <div class="bl-content">
             <h2>我的文章</h2>
-            {% for post in site.categories.blog %}         
+            {% for post in site.categories.blog %}
                 <articel>
                     <h3>{{ post.title }} <span>{{ post.date | date_to_string }}</span></h3>
                     <p>
@@ -57,8 +58,8 @@ title: Crazy Phage
                         <a href="{{ post.url }}">Read more</a>
                     </p>
                     <p></p>
-                </articel> 
-            {% endfor %}    
+                </articel>
+            {% endfor %}
         </div>
         <span class="bl-icon bl-icon-close"></span>
     </section>
@@ -78,16 +79,16 @@ title: Crazy Phage
                 <div class="pure-u-1-2"> <p> <a href="http://www.renren.com/331738600/profile"><i class="fa fa-renren"></i></a></p></div>
                 <div class="pure-u-1-2"><p><a href="http://weibo.com/attheworldend"><i class="fa fa-weibo"></i> </a></p></div>
                 <div class="pure-u-1-2"><p><a href="http://www.zhihu.com/people/crazyphage">知乎</a></p>  </div>
-                
-               
-               
-               
-                
+
+
+
+
+
                 <!--            <p><i class="fa fa-weixin"></i> crazyphage</p>
                 <p><i class="fa fa-qq"></i> 427733928</p> -->
-               
-                
-                 
+
+
+
             </div>
         </div>
         <span class="bl-icon bl-icon-close"></span>
@@ -95,7 +96,7 @@ title: Crazy Phage
 
     <!-- Panel items for the works -->
     <div class="bl-panel-items" id="bl-panel-work-items">
-         {% for work in site.categories.gallery %} 
+         {% for work in site.categories.gallery %}
             <div data-panel="panel-{{ work.description}}">
                 <div>
                     <img src="images/{{ work.description}}.jpg" />
