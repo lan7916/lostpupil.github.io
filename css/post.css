@@ -28,13 +28,11 @@ body{
 }
 .content h1{
 	font-weight: 300;
-	/*font-size: 2.5em;*/
 	background: #ea5506;
 }
 .content h2{
 	text-align: center;
 	font-weight: 150;
-	/*font-size: 1.5em;*/
 }
 .content h3{
 	text-align: center;
@@ -52,6 +50,7 @@ body{
 .footer a{
 	font-size: 1.5em;
 	color:#5654a2;
+  text-align:center;
 }
 @media screen and (max-width: 350px) {
 	.content h1 h2 {
@@ -71,4 +70,57 @@ body{
 
 .pagination-item:last-child {
 	float: right;
+}
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 1px 20px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 200;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.0em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+/* Effect 1: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
