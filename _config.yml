@@ -3,23 +3,19 @@ description: A mind palace for myself
 name: Crazy Phage
 markdown: redcarpet
 encoding: "utf-8"
+permalink: blog/:year/:month/:day/:title.html
+
 # --using code highlighting on github and linux
 highlighter: pygments
-# --using code highlighting on github and linux
-
 
 # --using code highlighting on windows
 # pygments: false
 # highlighter: rouge
-# --using code highlighting on windows
 
 extensions: [fenced_code_blocks]
 rss_path: feed.xml
 BASE_PATH: http://lostpupil.github.io
 img_url: /images
-# Settings for comments helper
-# Set 'provider' to the comment provider you want to use.
-# Set 'provider' to false to turn commenting off globally.
-#
+
 comments :
   provider : uyan

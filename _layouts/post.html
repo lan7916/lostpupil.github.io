@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>粉红的小布拿拿</title>
 		<link rel="shortcut icon"  type="image/ico" href="images/favicon.ico"/>
 		<link rel="stylesheet" type="text/css" href="/css/post.css" />
@@ -39,40 +39,34 @@
 						<h1 class="header">{{ page.title }}</h1>
 						<div class="time">{{ page.date | date_to_string }}</div>
 							{{ content }}
-						</article>
-
+                        </article>
+                        <div class="pagination">
+                            {% if page.previous %}
+                            <a class="pagination-item newer" href="{{ BASE_PATH }}{{ page.previous.url }}"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;{{ page.previous.title }}</a>
+                            {% else %}
+                            <span class="pagination-item newer">上一篇&nbsp;<i class="fa fa-chain-broken"></i></span>
+                            {% endif %}
+                            {% if page.next %}
+                            <a class="pagination-item older" href="{{ BASE_PATH }}{{ page.next.url }}">{{ page.next.title }}&nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                            {% else %}
+                            <span class="pagination-item older">下一篇&nbsp;<i class="fa fa-chain-broken"></i></span>
+                            {% endif %}
+                        </div>
 					</div>
-					<div class="footer">
-						<a href="/index.html"><i class="fa fa-home"></i></a>
-						
-						<hr>
-						<!-- JiaThis Button BEGIN -->
-						<div class="jiathis_style_24x24">
-							<a class="jiathis_button_qzone"></a>
-							<a class="jiathis_button_tsina"></a>
-							<a class="jiathis_button_tqq"></a>
-							<a class="jiathis_button_weixin"></a>
-							<a class="jiathis_button_renren"></a>
-							<a href="http://www.jiathis.com/share?uid=1967006" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-							<a class="jiathis_counter_style"></a>
-						</div>
-						<script type="text/javascript">
-						var jiathis_config = {data_track_clickback:'true'};
-						</script>
-						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406989037756316" charset="utf-8"></script>
-						<!-- JiaThis Button END -->
-						
-						<!-- UY BEGIN -->
-						<div id="uyan_frame"></div>
-						<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1967006"></script>
-						<!-- UY END -->
-				</div>
-			
+                    <div class="footer">
+                        <a href="/index.html"><i class="fa fa-home"></i></a>
+
+                        <br>
+                        {% include share.html %}
+                        {% include comment.html %}
+
+                    </div>
+
 
 			</div>
 
 		</div><!-- /container -->
-		
+
 		<script src="/js/classie.js"></script>
 		<script src="/js/pathLoader.js"></script>
 		<script src="/js/main.js"></script>
