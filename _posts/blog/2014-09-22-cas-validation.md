@@ -31,5 +31,5 @@ cas_valid = (a, b, result) ->
 上面代码中还没有添加代码保证a，b，result为数字。这边都是对字符串进行处理，所以最后匹配结果的时候result前面多了一个‘+’号，用来对这个字符串进行类型转换，调用方法如下。
 
 ``` coffeescript
-cas_valid('10','00','4') # true
+cas_valid('10','00','4') # true or false
 ```
