@@ -20,6 +20,14 @@ cas_valid = (a, b, result) ->
 		sum = sum + a.charAt(len-i) * i
 	return sum % 10  == +result
 ```
+等价与map reduce版本
+
+```coffeescript
+cas_valid = (a, b, result) ->
+	start = (a + b).split("").reverse()
+	return((start.map (x,i) -> x * (i + 1)).reduce (x,y) -> x + y) % 10 is +result
+```
+
 上面代码中还没有添加代码保证a，b，result为数字。这边都是对字符串进行处理，所以最后匹配结果的时候result前面多了一个‘+’号，用来对这个字符串进行类型转换，调用方法如下。
 
 ``` coffeescript
