@@ -33,3 +33,28 @@ cas_valid = (a, b, result) ->
 ``` coffeescript
 cas_valid('10','00','4') # true or false
 ```
+
+Prodcution Version
+
+```coffeescript
+#cas validation
+  cas_rule = (a,b,result) ->
+    start = (a + b).split("").reverse()
+    return((start.map (x,i) -> x * (i + 1)).reduce (x,y) -> x + y) % 10 is +result
+
+  cas_vaild = (target) ->
+    $(target).on "keydown keyup blur", (e) ->
+      val = $(this).val().split('-')
+      bool_val = cas_rule(val[0],val[1],val[2])
+      if bool_val
+        $(this).css('border-color', '#4ebcec')       
+      else
+        $(this).css('border-color', 'red')
+        
+  ##add elements if you want to add fields to vaild
+  target = "#chemical_cas" 
+  valid_arrs = target.split " "
+  valid_arrs.map (t) ->    
+    cas_vaild(t)
+    return
+```
