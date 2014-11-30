@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breaking Bad</title>
+        <link href="css/bb.css" media="all" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/underscore-1.1.6.js"></script>
+        <script src="js/av.js"></script>
+        <script src="js/ut.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/button.css" />
+        <script src="js/classie.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+
+        <script type="text/javascript" src="js/jHtmlArea-0.7.5.min.js"></script>
+        <link rel="Stylesheet" type="text/css" href="css/jHtmlArea.css" />
+    </head>
+    <body>
+
+<div class="container">
+    <div id="splitlayout" class="splitlayout">
+        <div class="intro">
+            <div class="side side-left">
+                <div class="intro-content">
+                    <div class="profile"><img src="images/author.jpg" alt="profile1"></div>
+                    <h1><span>Crazy Phage </span><span>The Author</span></h1>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="side side-right">
+                <div class="intro-content">
+                    <div class="profile"><img src="images/logo.jpg" alt="profile2"></div>
+                    <h1><span>Breaking Bad</span><span>The Work</span></h1>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </div><!-- /intro -->
+        <div class="page page-right page-large">
+            <div class="page-inner">
+                <!-- Todo App Interface -->
+                  <div class="todoapp">
+                    <div class="content">
+
+                    </div>
+                </div>
+                <div id="credits">
+                    Powered by <a href="http://cn.avoscloud.com">AVOS Cloud</a> using the JavaScript SDK<br /><br />
+                </div>
+            </div><!-- /page-inner -->
+        </div><!-- /page-right -->
+        <div class="page page-left page-fill">
+            <div class="page-inner">
+                <section>
+                    <h2>About Me</h2>
+                    <p>
+                        Newbee Web developer.
+                        Major in computer science and technology.
+                        Spend most time on web development, using clojure, rails, and backbone.js.
+                        You can contact me via email: ufozhengli@163.com.
+                    </p>
+                </section>
+                <section>
+                    <h2>About this project</h2>
+                    <p>
+                        Basicly add some third-party lib together to make it work.
+                        This project using backbone.js, impress.js,and bootstrap and etc.
+                        This is still a toy version. But you can create your own impress demo without
+                        coding.
+                    </p>
+                </section>
+                <section>
+                    <h2>Hi oh</h2>
+                    <p>
+                        May the force be with you.
+                    </p>
+                </section>
+            </div><!-- /page-inner -->
+        </div><!-- /page-left -->
+        <a href="#" class="back back-right" title="back to intro">→</a>
+        <a href="#" class="back back-left" title="back to intro">←</a>
+    </div><!-- /splitlayout -->
+</div><!-- /container -->
+
+
+
+    <!-- Templates -->
+<script type="text/template" id="manage-todos-template">
+    <div id="user-info">
+    Signed in as <%= AV.User.current().get("username") %> (<a href="#" class="log-out">Log out</a>)
+    </div>
+    <header id="header">
+        <div>
+        <button id="save" class="btn btn-5 btn-5a icon-plus">Add New</button>
+        <a href="presentation.html"><button  class="btn btn-5 btn-5a icon-arrow-right">View Demo</button></a>
+        </div>
+
+
+    </header>
+    <div id="main">
+        <input id="toggle-all" type="checkbox">
+        <label  for="toggle-all">Mark all as complete</label>
+        <ul id="todo-list">
+            <img src='images/spinner.gif' class='spinner' />
+        </ul>
+    </div>
+    <div id="todo-stats"></div>
+</script>
+
+    <script type="text/template" id="login-template">
+      <header id="header"></header>
+      <div class="login">
+        <form class="login-form">
+          <h2>Log In</h2>
+          <div class="error" style="display:none"></div>
+          <input class="fin" type="text" id="login-username" placeholder="Username" />
+          <input class="fin" type="password" id="login-password" placeholder="Password" />
+          <button class="btn btn-4 btn-4a icon-arrow-right">Log In</button>
+        </form>
+
+        <form class="signup-form">
+          <h2>Sign Up</h2>
+          <div class="error" style="display:none"></div>
+          <input class="fin" type="text" id="signup-username" placeholder="Username"  pattern="[A-z]{8,16}"
+  title="At least 8 chars! And no more than 16 chars! Asswhole."/>
+          <input  class="fin" type="password" id="signup-password" placeholder="Password"  pattern="^[a-zA-Z]\w{5,17}$"
+  title="At least 6 chars! And no more than 16 chars! Asswhole."/>
+          <button class="btn btn-4 btn-4a icon-arrow-right">Sign Up</button>
+        </form>
+      </div>
+    </script>
+
+
+    <script type="text/template" id="item-template">
+                    <div class="view">
+                    <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %>>
+                    <button class="todo-destroy"></button>
+                    </div>
+      <div  class="<%= done ? 'completed' : '' %>">
+           <div class="row">
+                <div class="col-md-3">
+                    <label for="step">Step</label>
+                    <input type="text" name="step" value="<%=step%>" class="edit">
+                    <label for="dx">DataX</label>
+                    <input id="dx" name="dataX" type="text" class="edit"  value="<%=dataX%>">
+
+                    <label for="dy">DataY</label>
+                    <input id="dy" name="dataY" type="text" class="edit"  value="<%=dataY%>">
+
+                    <label for="dz">DataZ</label>
+                    <input id="dz" name="dataZ" type="text" class="edit"  value="<%=dataZ%>">
+                </div>
+                <div class="col-md-6">
+
+                    <textarea id="con"class="edit notebook"  name="content" cols="40" rows="10"><%=content%></textarea>
+                </div>
+                <div class="col-md-3" id='rot'>
+                    <label for="drx">RotateX</label>
+                    <input id="drx" name="dataRotateX" type="range" min="0" max="360" step="10" class="edit"  value="<%=dataRotateX%>"  >
+                    <span id="rotx"></span>
+
+
+                    <label for="dry">RotateY</label>
+                    <input id="dry" name="dataRotateY" type="range" min="0" max="360" step="10"  class="edit"  value="<%=dataRotateY%>">
+                    <span id="roty"></span>
+
+                    <label for="drz">RotateZ</label>
+                    <input id="drz" name="dataRotateZ" type="range" min="0" max="360" step="10"  class="edit"  value="<%=dataRotateZ%>">
+                    <span id="rotz"></span>
+
+                    <label for="ds" >Scale</label>
+                    <input id="ds" name="dataScale" type="range" min="1" max="10" step="1"  class="edit"  value="<%=dataScale%>">
+                </div>
+           </div>
+           <br>
+
+            <button class="upd btn btn-3 btn-3e">Update</button>
+      </div>
+    </script>
+
+    <script type="text/template" id="stats-template">
+      <footer id="footer">
+    <span id="todo-count"><strong><%= remaining %></strong> <%= remaining == 1 ? 'item' : 'items' %> left</span>
+    <ul id="filters">
+      <li>
+        <a href="javascript:void(0)" id="all" class="selected">All</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" id="active">Active</a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" id="completed">Completed</a>
+      </li>
+    </ul>
+    <button id="clear-completed" class="btn btn-5 btn-5a icon-remove">Clear completed (<%= done %>)</button>
+      </footer>
+    </script>
+
+
+         <script src="js/cbpSplitLayout.js"></script>
+
+
+  </body>
+</html>
