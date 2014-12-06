@@ -324,7 +324,7 @@ div.bl-panel-items nav span.bl-next-work {
 	text-transform: uppercase;
 	line-height: 2em;
 	cursor: pointer;
-	margin:2em;
+	margin-right:2em;
 }
 
 div.bl-panel-items.bl-panel-items-show nav {
