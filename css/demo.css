@@ -29,6 +29,8 @@ a {
 a:hover {
 	color: #000;
 }
+
+
 .codropsheader {
 	width: 100%;
 	margin: 0 auto;
@@ -85,12 +87,6 @@ a:hover {
 	background: #fff;
 }
 
-.codropsheader nav {
-	float: left;
-	text-align: center;
-	margin-left: 1.5em;
-	display: block;
-}
 
 .codropsheader nav a {
 	display: inline-block;

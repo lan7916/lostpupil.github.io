@@ -1,7 +1,8 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard 'jekyll' do
+guard 'livereload' do
   watch /.*/
   ignore /_site/
 end
+

@@ -8,7 +8,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+/*
+#F65A3E red
+#32BDBD sky blue
+#F9C54B yellow
+#222E27 blue
+*/
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
 *,
@@ -59,25 +64,25 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #F06060;
+	background: #F65A3E;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
+	background: #32BDBD;
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+	background: #222E27;
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #10A296;
+	background: #F9C54B;
 }
 
 .bl-box {
@@ -370,16 +375,16 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > section:first-child.bl-expand {
-	background: #EE4444;
+	background: #F65A3E;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #F98262;
+	background: #32BDBD;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #4BBE8E;
+	background: #222E27;
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #0D8278;
+	background: #F9C54B;
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),
