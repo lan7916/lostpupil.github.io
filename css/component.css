@@ -14,7 +14,7 @@
 #F9C54B yellow
 #222E27 blue
 */
-body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
+body, html { font-size: 100%; padding: 0; margin: 0;}
 
 *,
 *:after,
@@ -324,7 +324,6 @@ div.bl-panel-items nav span.bl-next-work {
 	text-transform: uppercase;
 	line-height: 2em;
 	cursor: pointer;
-	margin-right: 2em;
 }
 
 div.bl-panel-items.bl-panel-items-show nav {
