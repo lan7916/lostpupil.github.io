@@ -1,7 +1,13 @@
 body{
-  background: #ffd900;
+  background: #32BDBD;
 	color: #fff;
 }
+/*
+#F65A3E red
+#32BDBD sky blue
+#F9C54B yellow
+#222E27 blue
+*/
 
 .content {
 	font-family: 'Microsoft YaHei', 'Lato', SimSun,'STHeiti Light','Droid Sans', Arial, sans-serif;
@@ -10,7 +16,7 @@ body{
 	max-width: 800px;
 	margin-bottom: 1.5em;
 	line-height: 1.8em;
-	background: #00a497;
+	background: #222E27;
 	padding-bottom: 2em;
 }
 .header {
@@ -24,11 +30,11 @@ body{
 	padding: 1em 1em 1em;
 	font-weight: 250;
 	font-size: 1.2em;
-	background: #5654a2;
+	background: #F9C54B;
 }
 .content h1{
 	font-weight: 300;
-	background: #ea5506;
+	background: #F65A3E;
 }
 .content h2{
 	text-align: center;

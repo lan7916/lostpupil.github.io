@@ -28,13 +28,13 @@ body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #f2ede3;
     background: #333;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 300;
 }
 
 a {
-	color: #f0f0f0;
 	text-decoration: none;
+	color: #F9C54B;
 	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 0 5px;
@@ -191,15 +191,16 @@ div.bl-panel-items > div > div {
 /* Custom content */
 
 .bl-content p {
+	color:#32BDBD;
 	margin: 0 auto;
 	padding-bottom: 15px;
-	font-size: 1.7em;
-	line-height: 1.8;
+	font-size: 1em;
+	line-height: 1.2;
 }
 
 .bl-content h2 {
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 100;
 	margin: 0 0 20px 0;
 }
 
@@ -207,17 +208,18 @@ div.bl-panel-items > div > div {
 	padding: 20px 40px 20px 0px;
 }
 
-.bl-content article h3 {
+.bl-content article > h3 {
+	color: #F65A3E;
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	text-transform: uppercase;
 	margin: 0 0 10px 0;
 	padding-top: 20px;
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 .bl-content article a {
-	color: rgba(0,0,0,0.2);
+	color: #F9C54B;
 }
 
 .bl-content > ul {
@@ -437,7 +439,10 @@ section.bl-expand .bl-icon-close {
 	-moz-transition: opacity 0.3s linear 0.5s;
 	transition: opacity 0.3s linear 0.5s;
 }
-
+.pure-g  i, .pure-g a{
+	color:#32BDBD;
+	font-size: 77px;
+}
 @media screen and (max-width: 46.5em) {
 	.bl-content,
 	.bl-box {
