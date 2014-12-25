@@ -6,7 +6,7 @@ description: eurus home以及wobbly-slideshow中gulp的使用心得。
 date: 2014-12-25 13:12:14
 ---
 ##Gulp！Gulp！大口的来！
-写这边文章一边是为了分享一些东西，另一方面是上次去给荣荣的团队普及phonegap的时候，他们看到我用CLI，说一下子就回到解放前，当时我竟然无言以对。
+写这篇文章一边是为了分享一些东西，另一方面是上次去给荣荣的团队普及phonegap的时候，他们看到我用CLI，说一下子就回到解放前，当时我竟然无言以对。
 [Gulp](http://gulpjs.com/),gulp's use of streams and code-over-configuration makes for a simpler and more intuitive build.
 以上是官网上面的介绍，官网上面宣传的就是简单高效，方便学习。而且确实学习起来很方便嘛，能够简化前端很多无用的手动操作。比如说编译sass，coffee，压缩图片等等任务。这一条龙服务下来，绝对是前端标配的大宝剑啊，写代码起来直接就是飞起来。
 当然以前也知道有Grunt还有Yeoman这些东西，只是体验过yeoman，grunt的配置文件和Gulp比起来确实会多一些。Gulp的核心概念就是一次做一件事情，并且做好一件事情，就是流水线的工作，简化了很多人力，这个就是科技的进步！而且这个流水线是可以配置的，非常容易扩展出你想要的功能。
