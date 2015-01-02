@@ -2,7 +2,7 @@
 layout: post
 title: 大乐透用到的技术以及一些算法
 category: blog
-description: 关于这个转盘到的一些算法
+description: 关于这个转盘用到的一些算法
 date: 2015-01-02 12:59:02
 ---
 ##关于开发
