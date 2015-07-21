@@ -3,9 +3,8 @@ layout: post
 date: 2015-07-21 14:35:59
 title: 固定在左侧的侧边栏
 category: blog
-description: 
+description: 固定在左侧的侧边栏以及动画效果。
 ---
-
 #可显示隐藏的侧边栏
 
 ##HTML
@@ -47,7 +46,7 @@ description:
 
 ##JS
 
-```javscript
+```javascript
 // 可以在document ready中执行
 // 或者在page最底部加载
 $("#menu-toggle").click(function(e) {
