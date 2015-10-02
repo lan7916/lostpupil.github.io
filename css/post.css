@@ -8,6 +8,11 @@ body{
 #F9C54B yellow
 #222E27 blue
 */
+img {
+	max-width: 100% !important;
+	height: auto;
+	display: block;
+}
 h1,h2,h3,p,div,pre{
 	/* These are technically the same, but use both */
 	overflow-wrap: break-word;
