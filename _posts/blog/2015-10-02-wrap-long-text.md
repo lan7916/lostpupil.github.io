@@ -5,13 +5,18 @@ title: Wrap long text when css is awesome!
 category: blog
 description: 也许你见过很长很长的文字，但是他不断句。
 ---
+
 ##css is awesome
-场景：你肯定遇到过很长很长很长很长但是他不断句的句子或者单词，例如qwertyuiopasdfghjklzxcvbnmasdfghjkartyuiozxcdfghjkwertysdfghjertyusdfghjsdfghjwertyuixc，简直不正常，都不想说什么。  
+
+场景：你肯定遇到过很长很长很长很长但是他不断句的句子或者单词，例如qwertyuiopasdfghjklzxcvbnmasdfghjkartyuiozxcdfghjkwertysdfghjertyusdfghjsdfghjwertyuixc    
+简直不正常，都不想说什么。  
 
 自行脑补那个杯子图片，然后今天在fix联客尚墙的时候，遇到了这个问题，顺便把两种解决方式总结一下。
 
 ##第一种方法
-通常情况下面，white-space这个东西会是normal，所以你会看见css is awesome的效果![css is awesome](http://rlv.zcache.com/css_is_awesome_classic_white_coffee_mug-r2b2e63ffaa0a46628fb84f0844e7bf9d_x7jg9_8byvr_512.jpg)，然后这这些特技效果会在block-level的元素中展现出来，div，p，pre所以我们这边需要一个不一样的white-space。通常会有这么几种可以供你选择：
+
+通常情况下面，white-space这个东西会是normal，所以你会看见css is awesome的效果![css is awesome](http://rlv.zcache.com/css_is_awesome_classic_white_coffee_mug-r2b2e63ffaa0a46628fb84f0844e7bf9d_x7jg9_8byvr_512.jpg)    
+然后这这些特技效果会在block-level的元素中展现出来，div，p，pre所以我们这边需要一个不一样的white-space。通常会有这么几种可以供你选择：
 * normal
 * nowrap
 * pre
@@ -43,6 +48,7 @@ pre {
 ```
 
 ##第二种方法
+
 这个是在css trick上面看到的
 
 ```scss
