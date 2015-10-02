@@ -1,5 +1,5 @@
 body{
-  background: #32BDBD;
+	background: #32BDBD;
 	color: #fff;
 }
 /*
@@ -8,7 +8,21 @@ body{
 #F9C54B yellow
 #222E27 blue
 */
-
+h1,h2,h3,p,div,pre{
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
 .content {
 	font-family: 'Microsoft YaHei', 'Lato', SimSun,'STHeiti Light','Droid Sans', Arial, sans-serif;
 	margin: 60 auto;
