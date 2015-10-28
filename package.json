@@ -1,0 +1,9 @@
+{
+  "name": "lostpupil.github.io",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "webpack": "^1.12.2"
+  }
+}
