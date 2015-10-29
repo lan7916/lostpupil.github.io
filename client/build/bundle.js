@@ -19720,7 +19720,7 @@
 	      return _react2['default'].createElement(
 	        'h1',
 	        null,
-	        'Hello React And Webpack'
+	        'Hello React And Webpack! Ahoyi!'
 	      );
 	    }
 	  }]);
