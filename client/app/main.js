@@ -1,8 +1,9 @@
 import React from 'react';
-import Hello from './component.jsx';
+import ReactDom from 'react-dom';
+import Hello from './components/hello.jsx';
 
 main();
 
 function main() {
-    React.render(<Hello />, document.getElementById('app'));
+    ReactDom.render(<Hello />, document.getElementById('app'));
 }

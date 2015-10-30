@@ -1,7 +1,5 @@
 require "cuba"
 require "cuba/safe"
-require "cuba/render"
-require 'erb'
 
 require 'yaml'
 # database
@@ -10,7 +8,7 @@ require 'leancloud-ruby-client'
 require 'awesome_print'
 Cuba.use Rack::Session::Cookie, :secret => "__a_very_long_string__"
 Cuba.plugin Cuba::Safe
-Cuba.plugin Cuba::Render
+
 
 config = YAML.load_file('config/leancloud.yml')["leancloud"]
 
