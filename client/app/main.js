@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Hello from './components/hello.jsx';
+import HelloBox from './components/hello.jsx';
+
 
 main();
 
 function main() {
-    ReactDom.render(<Hello />, document.getElementById('app'));
+    // ReactDom.render(<SearchableTable data={data}/>, document.getElementById('search'));
+    ReactDom.render(<HelloBox />, document.getElementById('app'));
 }
