@@ -20,7 +20,7 @@ Cuba.define do
 
   on get do
     on root do
-      render 'index'
+      res.write "Ahoyi"
     end
   end
 end
