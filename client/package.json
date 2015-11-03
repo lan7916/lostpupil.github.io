@@ -2,8 +2,10 @@
   "name": "lostpupil.github.io",
   "version": "0.0.1",
   "dependencies": {
+    "history": "^1.13.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.1",
+    "react-router": "^1.0.0-rc3",
     "webpack-dev-server": "^1.12.1"
   },
   "devDependencies": {
