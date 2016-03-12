@@ -18,4 +18,4 @@ description: 之所以写这篇文章是因为我觉得极简主义其实很难
 
 ##end
 
-以上。其实因为I am a fucking programmer我才决定写这文章的，最终我选择了Cuba和Reagent。
+以上。其实因为I am a fucking programmer我才决定写这文章的，最终我选择了Cuba和Reagent。标题我也是想了很久，从YANGI到现在的标题，其实我觉得和本文并没有很大的联系，只是单纯的觉得标题够长才会有人看吧。当然也是我的愿景。
