@@ -12,6 +12,6 @@ description: 很久不更新，却也不知道可以写什么
 
 ## new life
 
-明天就要去上海了，新工作，新同事。
+明天就要去上海了，新工作，新同事。    
 
-Dog rich, no forget.
+Dog rich, no forget.    
