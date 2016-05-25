@@ -1,7 +1,6 @@
 title: Pink Banana's Blog
 description: A mind palace for myself
 name: Crazy Phage
-markdown: redcarpet
 encoding: "utf-8"
 permalink: blog/:year/:month/:day/:title.html
 
